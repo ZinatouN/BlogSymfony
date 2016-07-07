@@ -1,0 +1,11 @@
+blog_article:
+    resource: "@blogArticleBundle/Resources/config/routing.yml"
+    prefix:   /
+
+blog_general:
+    resource: "@blogGeneralBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

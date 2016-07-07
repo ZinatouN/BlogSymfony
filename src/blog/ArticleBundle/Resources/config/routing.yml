@@ -1,0 +1,12 @@
+  
+blog_article_index:
+    path:   /
+    defaults:   { _controller: blogArticleBundle:Article:index }
+
+blog_article_add:
+    path:     /add-article
+    defaults: { _controller: blogArticleBundle:Article:add }
+
+blog_article_detail:
+    path:   /detail-article/{slug}
+    defaults:   { _controller: blogArticleBundle:Article:detail }

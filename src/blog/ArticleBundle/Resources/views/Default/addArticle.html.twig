@@ -1,0 +1,30 @@
+{% form_theme form _self %}
+{% block form_row %}
+    {% spaceless %}
+        <div class="form-group col-lg-12">
+            {{ form_label(form)}}
+            {{ form_widget(form, {
+                'attr': {
+                    'class': 'form-control'
+                }
+            }) }}
+            {{ form_errors(form) }}
+        </div>
+    {% endspaceless %}
+{% endblock form_row %}
+{% extends '::base.html.twig' %}
+
+
+{%block body %}
+    <div>
+        <table><tr height="80"></tr></table>
+        <h1>Ajouter un article</h1>
+        <div class="col-lg-4">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+{%endblock%}
+
